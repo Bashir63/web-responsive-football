@@ -73,3 +73,11 @@ h1:hover{
     background-color:rgb(228, 209, 206);
     color: green;
 }
+
+.player-details{
+    grid-template-columns: 3 1fr;
+}
+
+.player-part{
+
+}
