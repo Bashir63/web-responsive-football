@@ -1,42 +1,46 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@200&family=Poppins:wght@700&display=swap');
 
-
+/* Common design for the font */
 body{
     font-family: 'Poppins', sans-serif;
 }
 
 
-.top-part{
+/* Design the top section */
+.top-part {
     display: flex;
     background-color: #1c2a94;
     padding-left: 150px;
     padding-right: 130px;
     padding-top: 70px;
     padding-bottom: 50px;
+    transition: width 10s, height 10s, transform 10s;
+    
+
 }
-
-.top-part:hover{
-    background-color: lightblue;
-    border-color: 15px white;
-
+/* Using transition to rotate the banner */
+.top-part:hover .banner {
+    width: 300px;
+    height: 300px;
+    transform: rotate(80deg);
+    transform: top right;
 }
    
-
+/* Designing the headline and the link button */
 .half-width{
     width: 50%;
     margin-right: 35px;
 }
 
+/* Creating shape for the image */
 .half-width img{
     width: 100%;
     margin-left: 35px;
 }
 
-body{
-    font-family: 'Poppins', sans-serif;
-}
 
+/* Designing the the h1 tag*/
 h1{
     
     font-size: 60px;
@@ -51,7 +55,7 @@ h1:hover{
 }
 
 
-
+/* Designing the link button */ 
 #link-button{
     
     padding-left: 20px;
@@ -80,6 +84,8 @@ h1:hover{
     color: green;
 }
 
+
+/* Designing the players detail section */
 .player-details{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -107,6 +113,7 @@ h1:hover{
     
 }
 
+/* Re-shaping the player images */
 .player-part img{
     width: 300px;
     height: 256px;
